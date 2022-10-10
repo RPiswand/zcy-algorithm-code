@@ -2,6 +2,8 @@ package stack.code.getMin;
 
 public class MainTest {
 
+
+    //测试github提交
     public static void main(String[] args) {
 
         MyStack1 myStack1 = new MyStack1();
