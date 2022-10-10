@@ -29,7 +29,7 @@ public class MyStack1 {
 
     public void push(int num) {
         //当辅助栈无元素或者辅助栈栈顶元素大于新压入的元素时，同时将新压入元素压入辅助栈
-        if (stackMin.isEmpty()|| getMin() >= num) {
+        if (stackMin.isEmpty() || getMin() >= num) {
             stackMin.push(num);
         }
         stackData.push(num);
