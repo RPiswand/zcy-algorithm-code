@@ -46,7 +46,5 @@ public class MainTest {
         System.out.println("my stack pop a element : "+ myStack2.pop());
         System.out.println("----------------------");
         System.out.println("current min element  : "+myStack2.getMin());
-
-
     }
 }
