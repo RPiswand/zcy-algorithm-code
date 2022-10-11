@@ -3,7 +3,7 @@ package stack.code.twostackstoqueue;
 import java.util.Stack;
 
 /**
- * 由两个栈组成一个队列
+ *              由两个栈组成一个队列(❤❤)
  * <p>
  * 题目：编写一个类，用两个栈实现一个队列。支持队列的基本操作(add、poll、peek)
  * <p>
