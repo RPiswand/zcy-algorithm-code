@@ -35,6 +35,7 @@ public class MaxWindow {
         }
         //双端队列，保存入队元素下标
         LinkedList<Integer> qmax = new LinkedList<>();
+        //arr长度为n，窗口为w，一共产生n-w+1个窗口最大值
         int[] res = new int[arr.length-w+1];
         int index = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -45,10 +46,11 @@ public class MaxWindow {
             }
             //当qmax为空或者qmax队尾元素大于入队列元素时，直接加到队尾
             qmax.addLast(i);
-            //当qmax队列头元素等于i-w时，说明
+            //当qmax队列头元素等于i-w时，说明队列头保存的下标已经不在窗口内了，故将其弹出
             if(qmax.peekFirst()==i-w){
                 qmax.pollFirst();
             }
+            //当移动了w个元素过后，窗口形成，队列头保存的就是当前窗口的最大值
             if(i>=w-1){
                 res[index++] = arr[qmax.peekFirst()];
             }
