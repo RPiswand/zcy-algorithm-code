@@ -1,4 +1,4 @@
-package stack.code.getMin;
+package stack.code.getmin;
 
 import java.util.Stack;
 
