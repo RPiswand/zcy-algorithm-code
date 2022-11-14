@@ -1,7 +1,7 @@
 package linkedlist.code.reversesingleanddoublelist;
 
-import linkedlist.code.reversesingleanddoublelist.exist.DoubleNode;
-import linkedlist.code.reversesingleanddoublelist.exist.Node;
+import linkedlist.code.common.nodemodule.DoubleNode;
+import linkedlist.code.common.nodemodule.Node;
 
 /**
  *                  反转单向和双向链表(❤)

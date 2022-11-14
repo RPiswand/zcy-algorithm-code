@@ -1,6 +1,6 @@
 package linkedlist.code.printcommon;
 
-import linkedlist.code.printcommon.exist.Node;
+import linkedlist.code.common.nodemodule.Node;
 
 /**
  *              打印两个有序链表的公共部分(❤)
@@ -11,7 +11,7 @@ import linkedlist.code.printcommon.exist.Node;
 
 public class PrintCommon {
 
-    public void printCommonPart(Node head1,Node head2){
+    public void printCommonPart(Node head1, Node head2){
         System.out.println("Common Part : ");
         while(head1!=null && head2!=null){
             if(head1.value<head2.value){

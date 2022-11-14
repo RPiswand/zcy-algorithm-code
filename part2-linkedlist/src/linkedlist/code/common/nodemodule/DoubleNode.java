@@ -1,4 +1,4 @@
-package linkedlist.code.removelastknode.exist;
+package linkedlist.code.common.nodemodule;
 
 public class DoubleNode {
     public int value;

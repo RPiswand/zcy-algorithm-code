@@ -1,7 +1,7 @@
 package linkedlist.code.removelastknode;
 
-import linkedlist.code.removelastknode.exist.DoubleNode;
-import linkedlist.code.removelastknode.exist.Node;
+import linkedlist.code.common.nodemodule.DoubleNode;
+import linkedlist.code.common.nodemodule.Node;
 
 /**
  *             在单链表个双链表中删除倒数第K个节点(❤)

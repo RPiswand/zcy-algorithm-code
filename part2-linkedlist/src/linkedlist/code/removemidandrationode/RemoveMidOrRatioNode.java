@@ -1,6 +1,6 @@
 package linkedlist.code.removemidandrationode;
 
-import linkedlist.code.removemidandrationode.exist.Node;
+import linkedlist.code.common.nodemodule.Node;
 
 /**
  *              删除链表的中间节点和a/b处的节点(❤)
@@ -46,7 +46,7 @@ public class RemoveMidOrRatioNode {
         return head;
     }
 
-    public Node removeRatioNode(Node head,int a,int b){
+    public Node removeRatioNode(Node head, int a, int b){
         if(a<1|| a>b){
             return head;
         }

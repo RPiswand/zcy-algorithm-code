@@ -1,4 +1,4 @@
-package linkedlist.code.removemidandrationode.exist;
+package linkedlist.code.common.nodemodule;
 
 public class Node {
 
