@@ -16,7 +16,7 @@ import linkedlist.code.common.nodemodule.Node;
  */
 public class JosephusProblem {
 
-    public static Node josephusKill(Node head,int m){
+    public static Node josephusKill1(Node head,int m){
         //如果头结点head为空，或者只有头结点一个元素，或者m<1时，返回head;
         if(head == null || head.next == head || m < 1){
             return head;
@@ -43,6 +43,38 @@ public class JosephusProblem {
         return head;
     }
 
+    /**
+     * 通过数学计算的方法，先计算出最后哪个节点存活，直接返回那个节点
+     * @param head
+     * @param m
+     * @return
+     */
+    public Node josephusKill2(Node head,int m){
+        if(head == null || head.next == head || m < 1){
+            return head;
+        }
+
+        Node cur = head.next;
+        int temp = 1;
+        while(cur!=head){
+            temp++;
+            cur=cur.next;
+        }
+        temp = getLive(temp,m);
+        while(--temp!=0){
+            head = head.next;
+        }
+        head.next=head;
+        return head;
+    }
+
+    public int getLive(int i,int m){
+        if(i==1){
+            return 1;
+        }
+        return (getLive(i-1,m)+m-1) % i+1;
+    }
+
     public static void main(String[] args) {
         Node n1 = new Node(1);
         Node n2 = new Node(2);
@@ -56,7 +88,7 @@ public class JosephusProblem {
         n4.next = n5;
         n5.next = n1;
 
-        System.out.println(josephusKill(n1, 2).value);
+        System.out.println(josephusKill1(n1, 2).value);
     }
 
 }
